@@ -1,7 +1,7 @@
 # Implementation of Pagerank in a distributed environment (Hadoop)  
 
 # Preprocessing  
-The Pre-processing job includes a Map-Reduce(to get all pages including dangling nodes and the adjacency lists) and Map job(initialize all pages with rank as 1/numberOfPages)  
+The Pre-processing job includes a Map-Reduce (to get all pages including dangling nodes and the adjacency lists) and Map job (initialize all pages with rank as 1/numberOfPages)  
 The Parser.java file is a standalone program to parse input files and print in human-readable form and create a graph from the wiki dump.  
 Issues:  
 - Special characters in Page names of Wiki pages (handled by converting to Bytes and Latin encoding)  
